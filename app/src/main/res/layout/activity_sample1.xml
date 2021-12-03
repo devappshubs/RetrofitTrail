@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnRetrofitPostExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retrofit POST Example"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@color/purple_500"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="55dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerCarData"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

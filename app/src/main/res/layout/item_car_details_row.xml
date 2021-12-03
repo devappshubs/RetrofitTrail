@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/imgBrandImg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/toyotacrysta"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/txtBrandName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="11sp"
+                android:textColor="#302F2F"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/txtAvailable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="#302F2F"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/txtActualPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="#302F2F"
+                android:layout_gravity="center"
+                android:paddingRight="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/txtCarTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#302F2F"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/txtToFrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="#302F2F"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:layout_toRightOf="@+id/txtCarTime"/>
+
+            <TextView
+                android:id="@+id/txtDiscountedPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#302F2F"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <!--<RatingBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:theme="@style/RatingBar"/>-->
+
+            <TextView
+                android:id="@+id/txtRatingValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:paddingLeft="5dp"
+                android:textColor="#302F2F"/>
+
+            <TextView
+                android:id="@+id/txtCouponCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="#2176E3"
+                android:textSize="11sp"
+                android:layout_gravity="center"
+                android:paddingRight="35dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
