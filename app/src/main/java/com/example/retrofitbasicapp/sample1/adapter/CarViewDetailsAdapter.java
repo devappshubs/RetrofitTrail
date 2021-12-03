@@ -60,6 +60,11 @@ public class CarViewDetailsAdapter extends RecyclerView.Adapter
         @BindView(R.id.ll_headlayout)
         LinearLayout ll_headlayout;
 
+        @BindView(R.id.txtCarType)
+        TextView txtCarType;
+
+
+
 
 
         public LayoutOneViewHolder(@NonNull View itemView)
@@ -74,7 +79,8 @@ public class CarViewDetailsAdapter extends RecyclerView.Adapter
                ll_headlayout.setVisibility(View.GONE);
                linear_layout.setVisibility(View.VISIBLE);
            }
-     
+
+            txtCarType.setText(item.getVehicle().getBrand());
         }
     }
 
